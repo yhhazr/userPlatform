@@ -1,0 +1,44 @@
+-- 创建订单视图
+	CREATE OR REPLACE VIEW v_orderview AS SELECT
+	`od`.`id` AS `orderId`,
+	`od`.`userId` AS `userId`,
+	`u`.`userName` AS `userName`,
+	`od`.`playerId` AS `playerId`,
+	`gt`.`gameName` AS `gameName`,
+	`gt`.`goldName` AS `gameGoldName`,
+	`st`.`serverName` AS `serverName`,
+	`pt`.`channelName` AS `channelName`,
+	`pt`.`subTypeName` AS `subTypeName`,
+	`pt`.`subTagName` AS `subTypeTagName`,
+	`od`.`endOrder` AS `endOrder`,
+	`od`.`amount` AS `amount`,
+	`od`.`gold` AS `gold`,
+	`od`.`status` AS `status`,
+	`od`.`payTime` AS `payTime`,
+	`od`.`assertTime` AS `assertTime`
+FROM
+	(
+		(
+			(
+				(
+					`db_userplatform`.`dt_order` `od`
+					LEFT JOIN `db_userplatform`.`dt_account` `u` ON((`od`.`userId` = `u`.`id`))
+				)
+				JOIN `conf_userplatform`.`conf_game_table` `gt` ON((`od`.`gameId` = `gt`.`id`))
+			)
+			JOIN `conf_userplatform`.`conf_server_table` `st` ON((`od`.`zoneId` = `st`.`id`))
+		)
+		JOIN `conf_userplatform`.`conf_pay_table` `pt` ON(
+			(
+				(
+					`od`.`channelId` = `pt`.`channelId`
+				)
+				AND(
+					`od`.`subType` = `pt`.`subType`
+				)
+				AND(
+					`od`.`subTag` = `pt`.`subTag`
+				)
+			)
+		)
+	) ;

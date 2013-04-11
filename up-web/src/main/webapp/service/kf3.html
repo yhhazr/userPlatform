@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>客服中心</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var selectedObjId = 'm1';
+    function bind(el) {
+        el.onclick = function() {
+            if (this.className == 'selected')
+                return;
+
+            this.className = 'selected';
+            if (this.src.indexOf('_on.jpg') == -1) {
+                this.src = this.src.replace('.jpg', '_on.jpg');
+            }
+            var older = document.getElementById(selectedObjId);
+            older.className = '';
+            older.src = older.src.replace('_on.jpg', '.jpg');
+
+            document.getElementById(this.id.replace('m', '')).style.display = '';
+            document.getElementById(selectedObjId.replace('m', '')).style.display = 'none';
+            selectedObjId = this.id;
+        };
+        el.onmouseover = function() {
+            if (this.className != 'selected')
+                this.src = this.src.replace('.jpg', '_on.jpg');
+        };
+        el.onmouseout = function() {
+            if (this.className != 'selected')
+                this.src = this.src.replace('_on.jpg', '.jpg');
+        };
+    }
+    window.onload = function() {
+        for (var i = 1; i < 11; i++)
+            bind(document.getElementById('m' + i));
+
+        var regex = /[?]t\=(\d)$/;
+        var result = window.location.href.toString().match(regex);
+        if (result && result[1]) {
+            document.getElementById('m'+result[1]).onclick();
+        }
+    };
+</script>
+<link href="images/ind.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../css/showcss.css" type="text/css"/>
+</head>
+
+<body>
+<div id="platformHead"></div>
+<iframe src="#" id="platIframeHead" style="display:none"></iframe>
+<script type="text/javascript" src="http://static.7road.com/platform/js/src/platformCommonHead.js"></script>
+<div class="homehead">
+    <div class="banner">
+        <a href="http://www.7road.com/" class="userlogo"></a>
+    </div>
+    <div class="nav" style="width:980px; margin:0 auto; height:77px; background:url(../img/usernav.png) no-repeat;">
+        <ul class="menu">
+            <li class="a"><a href="http://www.7road.com/">首页</a></li>
+            <li class="b"><a href="http://account.7road.com">个人中心</a></li>
+            <li class="c"><a href="http://pay.7road.com">游戏充值</a></li>
+            <li class="d"><a href="http://account.7road.com/forget.html">客服中心</a></li>
+            <li class="e"><a href="http://bbs.7road.com">游戏论坛</a></li>
+
+        </ul>
+        <div class="hotgame">
+            最热门的游戏：<a href="http://sq.7road.com" target="_blank" class="hot">神曲</a>
+
+            <a href="http://hs.7road.com" target="_blank" class="hot">海神</a>
+
+        </div>
+    </div>
+</div>
+<div class="kf_content">
+  <div class="kf_left">
+    <table width="161" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="50"></td>
+        </tr>
+        <tr>
+          <td><a href="kf.html"><img  src="images/kf_left_menu01.jpg" width="161" height="39" id="m1"/></a></td>
+        </tr>
+        <tr>
+          <td><a href="kf2.html"><img src="images/kf_left_menu02.jpg" width="161" height="39" id="m2" /></a></td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="images/kf_left_menu03_on.jpg" width="161" height="39" id="m3"   class="selected" /></a></td>
+        </tr>
+        <tr>
+          <td><a href="http://my.7road.com/jh/index.html" target="_blank"><img src="images/kf_left_menu04.jpg" width="161" height="39" id="m4"  /></a></td>
+        </tr>
+      </table>
+  </div>
+  <div class="kf_right">
+      <div id="1" class="kf_nr" style="display:none;">
+           <table width="793" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="39" style="font-size:14px; border-bottom:solid 1px #CCCCCC;">客服中心</td>
+  </tr>
+  <tr>
+    <td height="150"><img src="images/kf_kfzx_img.jpg" width="793" height="117" /></td>
+  </tr>
+  <tr>
+    <td height="52" align="center"><font style="color:#888888; font-size:14px; font-weight:bold;">神曲服务热线:86-755-61669777</font> </td>
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="76" align="center"><a href="#"><img src="images/kf_qq.jpg" width="172" height="46" /></a></td>
+  </tr>
+  <tr>
+    <td height="39" style="border-bottom:solid 1px  #CCCCCC;">密码相关</td>
+  </tr>
+    <tr>
+    <td height="97"><table width="793" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="148"><a href="#"><img src="images/kf_kfzx_bom_img01.jpg" width="148" height="42" /></a></td>
+        <td width="10">&nbsp;</td>
+        <td width="159"><a href="#"><img src="images/kf_kfzx_bom_img02.jpg" width="148" height="42" /></a></td>
+        <td width="148"><a href="#"><img src="images/kf_kfzx_bom_img03.jpg" width="148" height="42" /></a></td>
+        <td width="328">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+      </div>
+      <div id="2" class="kf_nr" >
+        <table width="793" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="39" style="font-size:14px; border-bottom:solid 1px #CCCCCC;">充值帮助</td>
+  </tr>
+  <tr>
+    <td height="663">
+
+
+
+
+<p style="margin:0cm;margin-bottom:.0001pt;line-height:20.1pt"><strong><span style="font-family:宋体;mso-bidi-font-family:宋体;color:red">网上银行充值</span></strong><b><span lang="EN-US" style="color:red"><br>
+</span></b><strong><span lang="EN-US" style="font-size:10.0pt;font-family:宋体;
+mso-bidi-font-family:宋体;color:#454545">Q</span></strong><strong><span style="font-size:10.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:#454545">：
+网银、支付宝充值一次最少充值多少人民币？</span></strong><b><span lang="EN-US" style="font-size:10.0pt;
+color:#454545"><br>
+</span></b><span lang="EN-US" style="font-size:10.0pt;color:#454545">A</span><span style="font-size:10.0pt;color:#454545">：单笔充值，网银、支付宝充值一次最少是<span lang="EN-US">10</span>元，最多是<span lang="EN-US">50000</span>元。</span><span lang="EN-US" style="font-size:11.0pt;
+color:#454545"><o:p></o:p></span></p>
+
+<p style="margin:0cm;margin-bottom:.0001pt;line-height:20.1pt"><strong><span lang="EN-US" style="font-size:10.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+color:#454545">Q</span></strong><strong><span style="font-size:10.0pt;
+font-family:宋体;mso-bidi-font-family:宋体;color:#454545">： 银行卡没有开通网上银行功能可以充值吗？</span></strong><b><span lang="EN-US" style="font-size:10.0pt;color:#454545"><br>
+</span></b><span lang="EN-US" style="font-size:10.0pt;color:#454545">A</span><span style="font-size:10.0pt;color:#454545">：没有开通网银，暂不支持直接使用银行卡网上充值的，建议您可以到银行开通网银功能后再进行充值。</span><span lang="EN-US" style="font-size:11.0pt;color:#454545"><o:p></o:p></span></p>
+
+<p style="margin:0cm;margin-bottom:.0001pt;line-height:20.1pt"><strong><span lang="EN-US" style="font-size:10.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+color:#454545">Q</span></strong><strong><span style="font-size:10.0pt;
+font-family:宋体;mso-bidi-font-family:宋体;color:#454545">：我网银充值(储蓄\信用卡)已经扣费了，为什么没到帐呢？</span></strong><b><span lang="EN-US" style="font-size:10.0pt;color:#454545"><br>
+</span></b><span lang="EN-US" style="font-size:10.0pt;color:#454545">A</span><span style="font-size:10.0pt;color:#454545">：请您重新登录游戏查看游戏币是否到帐，若仍未到帐，请联系我们充值客服提供游戏帐号和银行扣费订单号码协助您查询。</span><span lang="EN-US" style="font-size:11.0pt;color:#454545"><o:p></o:p></span></p>
+
+<p style="margin:0cm;margin-bottom:.0001pt;line-height:20.1pt"><strong><span lang="EN-US" style="font-size:10.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+color:#454545">Q</span></strong><strong><span style="font-size:10.0pt;
+font-family:宋体;mso-bidi-font-family:宋体;color:#454545">：怎么查询网银扣费订单号？</span></strong><b><span lang="EN-US" style="font-size:10.0pt;color:#454545"><br>
+</span></b><span lang="EN-US" style="font-size:10.0pt;color:#454545">A</span><span style="font-size:10.0pt;color:#454545">：请登录您的网上个人银行，在个人网银交易明细里查询相关的银行扣费订单，银行扣费订单一般是<span lang="EN-US">12</span>位数字组成的。可以打开网址参考网银订单的查询方法：</span><span lang="EN-US"><a target="_blank" href="http://club.99bill.com/viewthread.php?tid=148171&amp;highlight=%C8%E7%BA%CE%B2%E9%D1%AF"><span style="font-size:10.0pt;color:#454545">http://club.99bill.com/viewthread.php?tid=148171&amp;highlight=%C8%E7%BA%CE%B2%E9%D1%AF</span></a></span><span lang="EN-US" style="font-size:11.0pt;color:#454545"><o:p></o:p></span></p>
+
+<p style="margin:0cm;margin-bottom:.0001pt;line-height:20.1pt"><strong><span lang="EN-US" style="font-size:10.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+color:#454545">Q</span></strong><strong><span style="font-size:10.0pt;
+font-family:宋体;mso-bidi-font-family:宋体;color:#454545">：网银充值(储蓄\信用卡)有没有优惠？</span></strong><b><span lang="EN-US" style="font-size:10.0pt;color:#454545"><br>
+</span></b><span lang="EN-US" style="font-size:10.0pt;color:#454545">A</span><span style="font-size:10.0pt;color:#454545">：目前充值都是以页面上的比例为准的，如果游戏里有充值活动，那么充值达到要求就可以获得奖励优惠的，充值活动请到游戏官网查看。</span><span lang="EN-US" style="font-size:11.0pt;color:#454545"><o:p></o:p></span></p>
+
+<p style="margin:0cm;margin-bottom:.0001pt;line-height:20.1pt"><strong><span lang="EN-US" style="font-size:10.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+color:#454545">Q</span></strong><strong><span style="font-size:10.0pt;
+font-family:宋体;mso-bidi-font-family:宋体;color:#454545">：网银充值(储蓄\信用卡)提示：“对不起，由于商家订单的提交信息不正确，交易不能进行，请联系商家，错误代码：<span lang="EN-US">80001</span>，错误信息：当前交易属于非法交易，请与商户网站联系。” 怎么解决？</span></strong><b><span lang="EN-US" style="font-size:10.0pt;color:#454545"><br>
+</span></b><span lang="EN-US" style="font-size:10.0pt;color:#454545">A</span><span style="font-size:10.0pt;color:#454545">：出现此提示可能是您浏览器限制问题，建议更换浏览器重新提交即可。</span><span lang="EN-US" style="font-size:11.0pt;color:#454545"><o:p></o:p></span></p>
+
+<p style="margin:0cm;margin-bottom:.0001pt;line-height:20.1pt"><strong><span lang="EN-US" style="font-size:10.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+color:#454545">Q</span></strong><strong><span style="font-size:10.0pt;
+font-family:宋体;mso-bidi-font-family:宋体;color:#454545">：为什么有些游戏充值时网银和其它方式充值的比例不一样的？</span></strong><b><span lang="EN-US" style="font-size:10.0pt;color:#454545"><br>
+</span></b><span lang="EN-US" style="font-size:10.0pt;color:#454545">A</span><span style="font-size:10.0pt;color:#454545">：目前我司游戏充值，有些支付方式渠道商需要收取手续费的，有些游戏的手续费我司已经给玩家支付，玩家充值时的比例和网银、支付宝充值的比例是一样的，也有些充值方式需要玩家自己支付手续费，所以充值比例不一样；但固话充值，所有玩家都是要支付相应的手续费，您在网页上选择相关的面额充值时会有提示对应多少游戏币的。<span lang="EN-US"><o:p></o:p></span></span></p>
+
+<p style="margin:0cm;margin-bottom:.0001pt;line-height:20.1pt"><span lang="EN-US" style="font-size:11.0pt;color:#454545"><o:p>&nbsp;</o:p></span></p>
+</td>
+  </tr>
+  
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+      </div>
+      <div id="3" class="kf_nr" style="display:none;"></div>
+      <div id="4" class="kf_nr" style="display:none;"></div>
+  </div>
+
+</div>
+<div style="height:20px;width:100%;clear:both;overflow:hidden;"></div>
+<!--<div class="footer">
+    <div class="copyright">
+        <a href="http://my.7road.com/" class="footerlogo" target="_blank"></a>
+        <div class="copytext">
+            <a href="http://my.7road.com/" target="_blank" class="first">第七大道</a>|<a href="http://my.7road.com/links.asp" target="_blank">合作伙伴</a>|<a href="http://my.7road.com/job.asp" target="_blank">招贤纳士</a>|<a href="http://my.7road.com/Welfare.asp" target="_blank">成员福利</a>|<a href="http://my.7road.com/Contact.asp" target="_blank">联系方式</a>|<a href="http://my.7road.com/View.asp" target="_blank">意见反馈</a>|<a href="http://account.7road.com/legal_notice.html" target="_blank">法律声明</a>|<a href="http://my.7road.com/jh/index.html" target="_blank">父母须知</a><br>
+            公司地址：深圳市南山区深南大道9996号松日鼎盛大厦7-9层<br>
+            文网文[2010]207号  |  增值电信业务经营许可证：粤B2-20100091 | Copyright© 2009 www.7road.com All rights reserved. <br>
+            <div class="blank10"></div>
+            <a href="http://www.ebs.gov.cn/EntCertificate.aspx?domainId=ce398cfb-67f0-48ad-bcbe-06cc1729c187" target="_blank"> <img src="../../img/footer_01.png"> </a>
+            <a href="http://www.sznet110.gov.cn/netalarm/index.jsp" target="_blank"> <img src="../../img/footer_02.png"></a>
+            <a href="http://help.5173.com/cxlm/01.html?rcc_id=a5e542ca515c6c90722d0233f3efe9b9" target="_blank"><img src="../../img/footer_03.png"> </a>
+        </div>
+        <div class="blank"></div>
+    </div>
+</div>
+ -->
+<div id="platformFooter"></div>
+<script type="text/javascript" src="http://static.7road.com/platform/js/src/platformCommonFooter.js"></script>
+</body>
+</html>

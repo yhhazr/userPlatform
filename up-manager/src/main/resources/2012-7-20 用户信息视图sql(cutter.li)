@@ -1,0 +1,27 @@
+CREATE VIEW v_userInfo AS SELECT
+	`acc`.`id` AS `id`,
+	`acc`.`userName` AS `userName`,
+	`vu`.`aggrRecharge` AS `aggrRecharge`,
+	`vu`.`createTime` AS `createTime`,
+	`vu`.`realName` AS `realName`,
+	`vu`.`icn` AS `icn`,
+	`vu`.`lastIp` AS `lastIp`,
+	`vu`.`lastLoginTime` AS `lastLoginTime`,
+	`vu`.`lastGameId` AS `lastGameId`,
+	`vu`.`lastGameZoneId` AS `lastGameZoneId`,
+	`vu`.`loginSum` AS `loginSum`,
+	`vu`.`site` AS `site`,
+	`vu`.`gender` AS `gender`,
+	`vu`.`birthday` AS `birthday`,
+	`vu`.`city` AS `city`,
+	`vu`.`career` AS `career`,
+	`vu`.`safeLevel` AS `safeLevel`,
+	`acc`.`email` AS `email`,
+	`acc`.`status` AS `status`
+FROM
+	(
+		`db_userplatform`.`v_user` `vu`
+		JOIN `db_userplatform`.`dt_account` `acc`
+	)
+WHERE
+	(`vu`.`id` = `acc`.`id`) ;

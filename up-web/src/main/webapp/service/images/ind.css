@@ -1,0 +1,416 @@
+body {
+	margin:0px;
+	padding:0px;
+	font-size:12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-family:"雅黑宋体";
+}
+
+img{ border:0px;}
+#main {
+	margin:0px auto;
+	padding:0px;
+	width:100%;
+	height:100%;	
+}
+.top {
+	margin:0 auto;
+	padding:0px;
+	width:1000px;
+	height:74px;	
+}
+.logo {
+	float:left;
+	width:203px;
+	height:74px;	
+}
+.kh {
+	float:left;
+	width:187px;
+	height:74px;	
+}
+.menu{
+	float:right;
+	width:610px;
+	height:74px;
+}
+	
+.geren_content{
+	padding:0px;
+	width:1000px;
+	margin-top:30px;
+	margin:0px auto;
+}
+.geren_content1{
+	width:1000px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.geren_left{
+	float:left;
+	width:161px;
+	height:1652px;
+	background:url(left_menu_bg.jpg)  repeat;
+}
+.geren_right{
+	float:right;
+	width:839px;
+
+}
+geren_right_01{
+	float:right;
+	width:839px;
+	height:34px;
+}
+geren_right_01{
+	float:right;
+	width:839px;
+}
+
+.bom_content{
+	border-top:#dddddd solid 1px;
+    padding:0px;
+	float:left;
+	margin:0 auto;
+	width:1000px;
+	height:140px;
+	
+}
+.bom_menu{
+    width:600px;
+	height:20px;
+	float:left;
+	margin-top:22px;
+	line-height:160%;
+	color:#9d9c9c;
+}
+.bom_menu a{
+	color:#b5b4b4;
+	text-decoration:none;
+}
+.bom_menu a:hover{
+	color:#6f6f6f;
+	text-decoration:none;
+}
+
+.geren_nr{
+	margin:20px 0 0 50px;
+}
+.geren_nr_tp{
+	margin-top:20px;
+}
+
+
+.bom_dz{
+    width:740px;
+	height:60px;
+	float:left;
+	line-height:180%;
+	color:#9d9c9c;
+}
+.bom_dz a{
+	color:#9d9c9c;
+	text-decoration:none;
+}
+.bom_dz a:hover{
+	color:#5d5d5d;
+	text-decoration:none;
+}
+.bom_img{
+    width:276px;
+	height:29px;
+	float:right;
+	margin-top:15px;
+
+}
+
+
+
+
+
+
+
+/*充值页面--选择游戏*/
+.cz_content{
+    width:1000px;
+	height:750px;
+	margin:0 auto;
+}
+.cz_left{
+    width:812px;
+	height:723px;
+	float:left;
+	background-image:url(cz_xz_bg.jpg);
+	color:#6b6b6b;
+	font-size:14px;
+	font-weight:bold;
+	margin-top:30px;
+}
+
+.cz_xzyx_img a{
+    width:290px;
+	height:133px;
+	float:left;
+	background-image:url(cz_youxi_img.jpg);
+}
+.cz_xzyx_img a:hover{
+    width:290px;
+	height:133px;
+	float:left;
+	background-image:url(cz_youxi_img_on.jpg);
+}
+
+.cz_xzyx_bon a{
+    width:182px;
+	height:43px;
+	float:left;
+	background-image:url(cz_xzyx_bon.jpg);
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold;
+	line-height:43px;
+	text-decoration: none;
+	text-align:center;
+	
+}
+.cz_xzyx_bon a:hover{
+    width:182px;
+	height:43px;
+	float:left;
+	background-image:url(cz_xzyx_bon_on.jpg);
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold;
+	line-height:43px;
+	text-decoration: none;
+	text-align:center;
+}
+.cz_right{
+    width:178px;
+	height:227px;
+	float:left;
+	margin-left:10px;
+	margin-top:30px;
+}
+
+
+
+
+
+/*充值页面--确认信息*/
+
+.cz_qr_left{
+    width:193px;
+	height:721px;
+	float:left;
+	background-image:url(cz-qrxinxi_left_bg.jpg);
+	background-repeat:no-repeat;
+	margin-top:30px;
+	margin-right:4px;
+}
+
+.cz_qr_left_menu{
+    width:193px;
+	height:681px;
+	float:left;
+	color:#6b6b6b;
+	font-size:12px;
+	margin-top:30px;
+}
+
+.cz_qr_left_menu ul{
+    width:193px;
+	height:38px;
+	float:left;
+	color:#6b6b6b;
+	font-size:12px;
+	margin:2px 0px;
+	list-style:none;
+	padding:0px;
+}
+.cz_qr_left_menu ul li{
+    width:193px;
+	height:38px;
+	float:left;
+	color:#6b6b6b;
+	font-size:12px;
+	list-style:none;
+	padding:0px;
+	line-height:38px;
+	text-align:center;
+}
+.cz_qr_left_menu ul li a{
+    width:193px;
+	height:38px;
+	float:left;
+	color:#6b6b6b;
+	font-size:12px;
+	text-decoration:none;
+	background-image:url(cz_left_menu01.jpg);
+}
+.cz_qr_left_menu ul li a:hover{
+    width:193px;
+	height:38px;
+	float:left;
+	color:#fff;
+	font-size:14px;
+	font-weight:bold;
+	text-decoration:none;
+	background-image:url(cz_left_menu01_on.jpg);
+}
+
+
+.cz_qr_cen{
+    width:612px;
+	min_height:720px;
+	float:left;
+	background:url(cz-qrxinxi_cen_bg.jpg) no-repeat;
+	border:1px solid #ececec;
+	color:#6b6b6b;
+	font-size:12px;
+	margin-top:30px;
+}
+
+.cz_cen_top_title{
+	color:#6b6b6b;
+	font-size:14px;
+	font-weight:bold;
+}
+.cz_qr_cen_bon a{
+	width:140px;
+	height:40px;
+	float:left;
+	background-image:url(cz_cen_bon.jpg);
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold;
+	line-height:40px;
+	text-decoration: none;
+	text-align:center;
+}
+.cz_qr_cen_bon a:hover{
+	width:140px;
+	height:40px;
+	float:left;
+	background-image:url(cz_cen_bon_on.jpg);
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold;
+	line-height:40px;
+	text-decoration: none;
+	text-align:center;
+}
+
+
+
+
+
+
+
+
+/*充值页面--完成信息*/
+
+.cz_wc_content{
+	color:#8f8f8f;
+	font-size:14px;
+}
+
+.cz_wc_jilu{
+	color:#0f92f7;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.cz_wc_cg{
+	color:#1ba600;
+	font-size:12px;
+	font-weight:bold;
+}
+.cz_wc_wcg{
+	color:#ff3000;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.cz_wc_cen_bon a{
+	width:140px;
+	height:40px;
+	float:left;
+	background-image:url(cz_cen_bon.jpg);
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold;
+	line-height:40px;
+	text-decoration: none;
+	text-align:center;
+}
+.cz_wc_cen_bon a:hover{
+	width:140px;
+	height:40px;
+	float:left;
+	background-image:url(cz_cen_bon_on.jpg);
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold;
+	line-height:40px;
+	text-decoration: none;
+	text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.kf_content{
+    width:980px;
+	height:793px;
+	margin-top:30px;
+	margin:0 auto;
+	padding:0px;
+}
+.kf_left{
+    width:161px;
+	height:793px;
+	float:left;
+	background-image:url(kf_left_bg.jpg);
+	margin-top:30px;
+}
+
+.kf_right{
+    width:819px;
+	height:793px;
+	float:left;
+    background: url(kf_right_bg.jpg) no-repeat -20px 0;
+	margin-top:30px;
+}
+
+.kf_nr{
+	margin:50px 0 0 20px;
+	width:793px;
+}
+
+
+.bom{
+	width:1000px;
+	height:100px;
+	float:left;
+	margin-top:10px;
+  }
+
+
+
+
+
+
+
+
+
+

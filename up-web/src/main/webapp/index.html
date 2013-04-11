@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>用户平台</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script>
+        $(function() {
+            var availableTags = [
+                "@126.com",
+                "@qq.com",
+                "@163.com",
+                "@gmail.com",
+                "@sina.com",
+                "@yahoo.com"
+
+            ];
+            $( "#tags" ).autocomplete({
+                source: availableTags,
+                search:function(){
+                   for(var item in availableTags)
+                    {
+                        item=$( "#tags").val()+item;
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<a href="/login.html">平台登录</a>
+<a href="/register.html">平台注册</a>
+<a href="/register_fcm.html">平台防沉迷注册</a>
+<a href="/pay/index.html">充值</a>
+<a href="/testTenpay/index.jsp">财付通充值</a>
+<a href="/forget.html">忘记密码</a>
+<a href="/login_sq.html">神曲登录</a>
+<a href="/signup_sq.html">神曲注册</a>
+<a href="/GetSqMergerInfo">获取神曲合服信息</a>
+<hr>
+<a href="/RechargeTest">充值测试</a>
+  <hr>
+<div class="ui-widget">
+    <label for="tags">Tags: </label>
+    <input id="tags" />
+</div>
+
+
+<a href="/querySignInfo?uid=1&gid=1">获取签到信息</a>
+
+<a href="/getGiftPack?uid=1&gid=1&giftPackScore=10">领取礼包</a>
+
+<a href="/todaySign?uid=1&gid=1">签到</a>
+
+</body>
+</html>

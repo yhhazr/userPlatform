@@ -1,0 +1,811 @@
+@charset "utf-8";
+body {
+    background: #fff url(../img/userbodybg.jpg) repeat-x 0 -26px;
+    font: normal 12px / 22px 新 宋 体, 宋 体;
+    color: #171717;
+}
+
+.textinput {
+    height: 28px;
+    width: 215px;
+    line-height: 28px;
+    padding: 3px 0 3px 10px;
+    background-image: url(../img/inputText.png);
+    outline: none;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.textinput_hover {
+    background-position: 0 -34px;
+}
+
+.bread {
+    width: 980px;
+    margin: 0 auto;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.bread a {
+    color: #ccc;
+    padding: 0 10px;
+}
+
+.bread p {
+    float: right;
+}
+
+.bread span {
+    color: #666;
+    padding: 0 10px;
+}
+
+.main {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.leftbox {
+    width: 221px;
+    float: left;
+}
+
+.menubox {
+    width: 221px;
+}
+
+.menubox h2 {
+    height: 68px;
+    background: url(../img/max_icon.png) no-repeat 0 0;
+    text-indent: -9999px;
+}
+
+.menulist {
+    width: 221px;
+    height: 40px;
+    background: url(../img/max_icon.png) no-repeat 0 -68px;
+    line-height: 38px;
+}
+
+.menulist_first {
+    border-top: 1px solid #d9d9d9;
+}
+
+.menulist a {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    width: 159px;
+    height: 38px;
+    background-image: url(../img/min_icon.png);
+    background-repeat: no-repeat;
+    margin-left: 25px;
+    padding-left: 35px;
+}
+
+.menulist a.a {
+    background-position: 0 -118px;
+}
+
+.menulist a.b {
+    background-position: 0 -158px;
+}
+
+.menulist a.c {
+    background-position: 0 -198px;
+}
+
+.menulist a.d {
+    background-position: 0 -238px;
+}
+
+.menulist a.e {
+    background-position: 0 -278px;
+}
+
+.menulist a strong {
+    float: left;
+    cursor: pointer
+}
+
+.menulist a:hover {
+    text-decoration: none;
+}
+
+.menulist a span {
+    float: left;
+    width: 5px;
+    height: 7px;
+    background: url(../img/min_icon.png) no-repeat 0 -370px;
+    margin: 16px 0 0 70px;
+}
+
+.menulist_select {
+    height: 41px;
+    background: url(../img/max_icon.png) no-repeat 0 -108px;
+}
+
+.menulist_select a {
+    color: #2c9907;
+}
+
+.menulist_select a span {
+    background-position: 0 -768px;
+}
+
+.sub_menulist {
+    border-bottom: 1px solid #d9d9d9;
+    width: 159px;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    background-color: #fff;
+    padding: 5px 0 5px 60px;
+}
+
+.sub_menulist a {
+    display: block;
+    width: 130px;
+    height: 36px;
+    padding-left: 29px;
+    line-height: 36px;
+    font-size: 14px;
+    color: #666;
+    background-image: url(../img/min_icon.png);
+    background-repeat: no-repeat;
+}
+
+.sub_menulist a.one {
+    background-position: 0 -398px;
+}
+
+.sub_menulist a.two {
+    background-position: 0 -438px;
+}
+
+.sub_menulist a.three {
+    background-position: 0 -478px;
+}
+
+.sub_menulist a.four {
+    background-position: 0 -518px;
+}
+
+.sub_menulist a.five {
+    background-position: 0 -558px;
+}
+
+.sub_menulist a.six {
+    background-position: 0 -598px;
+}
+
+.sub_menulist a.seven {
+    background-position: 0 -640px;
+}
+
+.sub_menulist a.eight {
+    background-position: 0 -680px;
+}
+
+.sub_menulist a.select {
+    color: #288206;
+    font-weight: bold;
+}
+
+.entryemail {
+    color: #333;
+    padding: 76px 0 0 128px;
+}
+
+.entryemail label.f12px {
+    color: #ccc;
+    padding-left: 5px;
+}
+
+.thenext, .save_a {
+    cursor: pointer;
+    display: block;
+    width: 102px;
+    height: 34px;
+    background: url(../img/button.png) no-repeat 0 -529px;
+    margin: 45px 0 0 77px;
+    line-height: 34px;
+    font: bold 14px / 34px 宋 体;
+    color: #FFF;
+    text-align: center;
+}
+
+.thenext:hover, .save_a:hover {
+    cursor: pointer;
+    background-position: 0 -563px;
+    text-decoration: none;
+}
+
+.rightbox {
+    float: left;
+    width: 745px;
+    margin-left: 12px;
+    border: 1px solid #e1e1e1;
+}
+
+.topline {
+    width: 745px;
+    height: 3px;
+    overflow: hidden;
+    background-color: #57bb33;
+}
+
+.rgtcontent {
+    padding: 3px 14px 20px;
+    min-height: 435px;
+    _height: 435px;
+}
+
+.h2_title {
+    font: normal 16px / 36px 微 软 雅 黑, 新 宋 体;
+    border-bottom: 1px solid #d3d3d3;
+    background: url(../img/min_icon.png) no-repeat 0 -52px;
+    padding-left: 18px;
+}
+
+.h3_title {
+    font: bold 14px / 32px 宋 体;
+    color: #333;
+    background-position: 0 -55px
+}
+
+.now_buzhou {
+    height: 33px;
+    width: 716px;
+    background-image: url(../img/buzhou.png);
+    background-repeat: no-repeat;
+}
+
+.now_buzhou1 {
+    background-position: 0 0;
+}
+
+.now_buzhou2 {
+    background-position: 0 -33px;
+}
+
+.now_buzhou3 {
+    background-position: 0 -66px;
+}
+
+.yz_email {
+    border: 1px solid #81c469;
+    background-color: #effee9;
+    padding: 24px 16px 40px;
+}
+
+.yz_emailbox {
+    border: 1px solid #d0eac5;
+    background-color: #fff;
+}
+
+.anquandun {
+    width: 60px;
+    height: 68px;
+    background: url(../img/button.png) -240px -38px;
+    float: left;
+    margin: 20px 0 0 108px;
+    display: inline;
+}
+
+.anquantishi {
+    float: left;
+    width: 400px;
+    margin: 20px 0 0 12px;
+    font-size: 14px;
+    padding-bottom: 60px;
+}
+
+.anquantishi strong {
+    display: block;
+    margin-top: 15px;
+}
+
+.anquantishi strong.a {
+    color: #333;
+}
+
+.anquantishi strong.b {
+    color: #0663b1;
+}
+
+.anquantishi strong.c span {
+    float: left;
+}
+
+.anquantishi strong.c span.one {
+    color: #666;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.anquantishi strong.c span.two {
+    color: #0663b1;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.anquantishi strong.c span.three {
+    width: 11px;
+    height: 11px;
+    background: url(../img/errorbt.png) no-repeat 0 -56px;
+    margin: 6px 0 0 10px;
+}
+
+.anquantishi strong.c {
+    color: #818181;
+    font-size: 12px;
+    font-weight: normal;
+    border-bottom: 1px dashed #cdcdcd;
+    padding-bottom: 15px;
+}
+
+.save_a {
+    margin: 30px 0 0 0;
+    cursor: pointer;
+}
+
+.yzminput {
+    font-weight: normal;
+    font-size: 14px;
+    color: #999;
+}
+
+.emaildun {
+    background-position: -180px -38px;
+}
+
+.edit_email {
+    height: 34px;
+    width: 300px;
+    overflow: auto;
+    zoom: 1;
+}
+
+.edit_email a {
+    height: 34px;
+    float: left;
+    margin-right: 25px;
+    float: left;
+    width: 122px;
+    background-image: url(../img/button.png);
+    background-repeat: no-repeat;
+}
+
+.edit_email a.editemail_a {
+    background-position: 0 -302px;
+}
+
+.edit_email a.removeemail_a {
+    background-position: 0 -336px;
+}
+
+.formerr {
+    border: 1px solid #FF8484;
+    padding: 1px;
+    background-color: #fff;
+    margin: 3px 0 0 5px;
+    position: absolute;
+    top: 0;
+    left: 330px;
+    display: none;
+}
+
+.warning {
+    background-color: #FFDBDB;
+    height: 24px;
+    line-height: 24px;
+    color: #F10000;
+    width: 106px;
+    font-size: 12px;
+}
+
+.formerr span {
+    float: left;
+    width: 11px;
+    height: 11px;
+    margin: 6px 10px 0 5px;
+    line-height: 24px;
+    background: url(../img/errorbt.png) no-repeat;
+}
+
+.formerr span.error {
+    background-position: 0 -114px;
+}
+
+.formerr_email {
+    position: absolute;
+    top: 75px;
+    left: 423px;
+}
+
+/*邮箱绑定end*/
+
+.tit_explain {
+    color: #666;
+    padding: 15px 0 30px;
+}
+
+.tit_explain p {
+    margin-left: 24px;
+    padding-bottom: 20px;
+}
+
+.h4_title {
+    color: #0663b1;
+    padding: 10px 0 10px 15px;
+    background: url(../img/min_icon.png) no-repeat 0 -711px;
+}
+
+.moblebg {
+    width: 217px;
+    height: 152px;
+    background: url(../img/shouji.png) no-repeat;
+    margin: 20px 0 0 10px;
+    display: inline;
+}
+
+.mobletext {
+    margin-top: 30px;
+    width: 340px;
+    color: #333;
+}
+
+.h5_title {
+    font: bold 14px / 32px 宋 体;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.mobletext p {
+    line-height: 28px;
+    color: #666;
+    padding-top: 15px;
+}
+
+.boundmoble {
+    position: absolute;
+    width: 109px;
+    height: 30px;
+    background: url(../img/button.png) no-repeat 0 -404px;
+    cursor: pointer;
+    top: -10px;
+    right: -125px;
+    font: bold 14px / 30px 宋 体;
+    color: #333;
+    text-align: center;
+}
+
+.boundmoble:hover {
+    text-decoration: none;
+}
+
+.emailbg {
+    background: url(../img/emailbg.png) no-repeat;
+}
+
+.questionbg {
+    background: url(../img/wentibg.png) no-repeat;
+}
+
+.h2_title strong {
+    color: #ccc;
+    font-weight: normal;
+}
+
+.set_moblebox {
+    width: 570px;
+    padding: 50px 0 0 150px;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.set_moblebox .f12px, .getyzmbox {
+    margin-left: 100px;
+    color: #666;
+}
+
+.getyzmbtn {
+    float: left;
+    width: 140px;
+    cursor: pointer;
+    height: 30px;
+    background: url(../img/button.png) no-repeat 0 -434px;
+    margin: 5px 10px 0 0;
+}
+
+.yzm_input {
+    margin: 10px 0 0 45px;
+}
+
+.yzm_input input {
+    border: 1px solid #ccc;
+    width: 96px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.set_mobleok {
+    border: 1px solid #8bce72;
+    background-color: #f3ffee;
+    padding: 20px 0 0 50px;
+    margin-top: 25px;
+}
+
+.setsj_ok {
+    margin: 35px 0 0 20px;
+}
+
+.set_mobleok .edit_email {
+    margin: 15px 0 0 190px;
+}
+
+.formerr_setmoble {
+    position: absolute;
+    top: 3px;
+    left: 155px;
+}
+
+.set_moblebox .thenext {
+    margin-left: 103px;
+}
+
+/*密保手机*/
+
+.send_email {
+    display: block;
+    width: 120px;
+    height: 31px;
+    background: url(../img/button.png) no-repeat 0 -464px;
+    margin: 18px 0 0 72px;
+    cursor: pointer;
+}
+
+.formerr_sendemail {
+    border-color: #F2CE71;
+    top: 126px;
+    left: 322px;
+}
+
+.formerr_sendemail .warning {
+    background-color: #FFF5DA;
+    color: #E26A00;
+    width: 220px;
+}
+
+.formerr_sendemail span.prompt {
+    background-position: 0 0;
+}
+
+/*密保邮箱*/
+
+.yiwang {
+    color: #ccc;
+    line-height: 28px;
+}
+
+.now_buzhou4 {
+    background-position: 0 -99px;
+}
+
+.now_buzhou5 {
+    background-position: 0 -132px;
+}
+
+.now_buzhou6 {
+    background-position: 0 -165px;
+}
+
+.now_buzhou7 {
+    background-position: 0 -198px;
+}
+
+.now_buzhou8 {
+    background-position: 0 -231px;
+}
+
+.now_buzhou9 {
+    background-position: 0 -264px;
+}
+
+.now_buzhou10 {
+    background-position: 0 -297px;
+}
+
+.queslist {
+    font-size: 14px;
+    float: left;
+    margin: 10px 0 0 180px;
+    display: inline;
+    width: 340px;
+}
+
+.queslist label {
+    float: left;
+    width: 80px;
+    text-align: right;
+    margin-top: 4px;
+}
+
+.queslist1 label {
+    margin-top: 4px;
+    *margin-top: 2px;
+}
+
+.queslist1 label.da_label {
+    margin-top: 4px;
+    *margin-top: 7px;
+}
+
+.queslist select {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0;
+    width: 222px;
+    float: left;
+    margin-left: 3px;
+    line-height: 32px;
+    vertical-align: middle;
+}
+
+.queslist span {
+    float: left;
+    font-weight: bold;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.theprev {
+    width: 102px;
+    height: 34px;
+    background: url(../img/button.png) no-repeat 0 -495px;
+    color: #666;
+    text-align: center;
+    font: bold 14px / 34px 宋 体;
+}
+
+.theprev:hover {
+    background-position: 0 -563px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.set_question .theprev {
+    margin: 20px 0 0 250px;
+}
+
+.formerr_question {
+    top: 0;
+    left: 307px;
+    position: absolute;
+}
+
+.jiechuemail_ok {
+    margin: 20px 0 0 120px;
+}
+
+.remove_moble {
+    border: 1px solid #8bce72;
+    background-color: #f3ffee;
+    margin-top: 40px;
+    width: 565px;
+}
+
+.remove_mobleinput {
+    border: 1px solid #cacaca;
+    height: 26px;
+    line-height: 26px;
+    width: 160px;
+}
+
+.nowset {
+    width: 125px;
+    height: 34px;
+    background: url(../img/button.png) no-repeat -122px -302px;
+    float: left;
+}
+
+.edit_email a.nowset {
+    width: 125px;
+}
+
+.bottomline {
+    border-bottom: 1px solid #ebebeb;
+    padding: 5px 0;
+}
+
+.editpass {
+    padding: 44px 0 0 170px;
+}
+
+.editpass_input {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.editpass_input .red {
+    padding-right: 5px;
+}
+
+.editpass .formerr {
+    border: 1px solid #f2ce71;
+    padding: 1px;
+    background-color: #fff;
+    margin: 3px 0 0 5px;
+    position: absolute;
+    width: 200px;
+}
+
+.editpass .warning {
+    background-color: #fff5da;
+    height: 24px;
+    width: 200px;
+    color: #e26a00;
+    font-size: 12px;
+}
+
+.editpass .formerr span {
+    float: left;
+    width: 11px;
+    height: 11px;
+    margin: 6px 10px 0 5px;
+    line-height: 24px;
+    background: url(../img/errorbt.png) no-repeat;
+}
+
+.editpass .formerr span.prompt {
+    background-position: 0 0;
+}
+
+.editpass .formerr span.error {
+    background-position: 0 -114px;
+}
+
+.editpass .formerr span.ok {
+    background-position: 0 -56px;
+}
+
+.editpass .errorts {
+    border: 1px solid #ff8484;
+}
+
+.editpass .formerr2 {
+    border-color: #ff8484;
+}
+
+.editpass .formerr2 .warning {
+    background-color: #ffdbdb;
+    color: #f10000;
+}
+
+.editpass .formerr3 {
+    border: 0;
+}
+
+.editpass .formerr3 span.ok {
+    margin: 7px 10px 0 3px;
+}
+
+.pass_lv, .pass_lv2 {
+    position: absolute;
+    height: 12px;
+    float: none;
+    top: 11px;
+    right: 236px;
+    width: 33px;
+    background: url(../img/button.png) no-repeat -140px 0;
+    z-index: 1;
+}
+
+.pass_lv2 {
+    z-index: 2;
+}

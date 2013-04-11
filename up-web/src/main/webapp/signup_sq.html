@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Sign Up</title>
+    <script type="text/javascript" src="/scripts/jquery.js"></script>
+    <script type="text/javascript">
+        $(function ready() {
+            var userInput = $(':text[name=user]');
+            var emailInput = $(':text[name=email]');
+            userInput.change(function () {
+                emailInput.val(userInput.val() + '@7road.com');
+            });
+        });
+
+        function checkNulls() {
+            var userName = $(':text[name=user]').val();
+            var passWord = $(':password[name=password]').val();
+            var email = $(':text[name=email]').val();
+
+            if (!userName || !passWord || !email) {
+                alert("Fill the form please!")
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+<form action="/SignUp" method="post" enctype="application/x-www-form-urlencoded" onsubmit="return checkNulls();">
+    <table>
+        <tr>
+            <th>UserName:</th>
+            <td>
+                <input type="text" name="user" value=""/>
+            </td>
+        </tr>
+        <tr>
+            <th>PassWord:</th>
+            <td>
+                <input type="password" name="password" value="" maxlength="50"/>
+            </td>
+        </tr>
+        <tr>
+            <th>Email:</th>
+            <td>
+                <input type="text" name="email" value="" maxlength="100"/>
+            </td>
+        </tr>
+        <tr>
+            <th>RealName:</th>
+            <td>
+                <input type="text" name="name" value="" maxChars="4"/>
+            </td>
+        </tr>
+        <tr>
+            <th>ICN:</th>
+            <td>
+                <input type="text" name="icn" value="" maxLength="25"/>
+            </td>
+        </tr>
+        <tr>
+            <th>&nbsp;</th>
+            <td>
+                <input type="submit" value="SignUp"/>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

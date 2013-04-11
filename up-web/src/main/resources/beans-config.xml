@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2012. SZ7thRoad.TechSupport All Right Reserved.
+  -->
+<beans>
+    <description>通行证平台接口服务配置文件。</description>
+
+    <!--默认连接池，用于主数据库-->
+    <bean id="default" class="com.sz7road.persist.DataSourceBean">
+        <property name="dataSourceProperties">
+            <props>
+                <prop key="jdbcUrl">SPmS+WcH7Tm/xCa6afNrPonYT/FkrsTl47AET6LAD7g6uLX1UgKSGI03ptbh3h+jlVfUgHtxDSnpAyCf5VlrN0cYCJ465XOT</prop>
+                <prop key="username">MMOJvr3dbME=</prop>
+                <prop key="password">UW0dtyvAcCwifpGbdyN7pA==</prop>
+                <prop key="lazyInit">true</prop>
+                <prop key="partitionCount">1</prop>
+                <prop key="maxConnectionsPerPartition">4</prop>
+                <prop key="minConnectionsPerPartition">1</prop>
+                <prop key="connectionTimeoutInMs">10000</prop>
+                <prop key="poolName">pool-db_userplatform</prop>
+                <prop key="defaultAutoCommit">false</prop>
+            </props>
+        </property>
+    </bean>
+    <!--日志连接池，用于日志数据库-->
+    <bean id="log" class="com.sz7road.persist.DataSourceBean">
+        <property name="dataSourceProperties">
+            <props>
+                <prop key="jdbcUrl">SPmS+WcH7Tm/xCa6afNrPonYT/FkrsTl56A/2niQz/Q7mkN6BuY9nOK2DeYuZgS/MAOKZr+0FYWtvD1phI4eu4Zy9EN1c6C2</prop>
+                <prop key="username">MMOJvr3dbME=</prop>
+                <prop key="password">UW0dtyvAcCwifpGbdyN7pA==</prop>
+                <prop key="lazyInit">true</prop>
+                <prop key="partitionCount">1</prop>
+                <prop key="maxConnectionsPerPartition">4</prop>
+                <prop key="minConnectionsPerPartition">1</prop>
+                <prop key="connectionTimeoutInMs">10000</prop>
+                <prop key="poolName">pool-log_userplatform</prop>
+                <prop key="defaultAutoCommit">false</prop>
+            </props>
+        </property>
+    </bean>
+</beans>

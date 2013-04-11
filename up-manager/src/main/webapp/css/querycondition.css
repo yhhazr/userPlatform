@@ -1,0 +1,61 @@
+#queryTable {
+    width: 40%;
+    height: 200px;
+    border: 1px;
+    border-color: #000000;
+    /*border-width: 2px;*/
+    /*margin-top:6px;*/
+    background-color: white;
+}
+
+#queryHead {
+    display: none;
+    width: 100%;
+    background-color: white;
+    margin-top: 0px;
+}
+
+select {
+    width: 100px;
+}
+
+#hideorshow {
+    text-align: right;
+    background-color: #b6ecff;
+    height: 40px;
+}
+
+td {
+    text-align: center;
+    border: 1px;
+    border-color: green;
+
+}
+
+.top_h4 {
+    font-size: 16px;
+    line-height: 36px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-indent: 23px;
+    color: #232324;
+    background-color: #68fff7;
+}
+
+.close {
+    position: absolute;
+    right: 8px;
+    top: 0;
+    display: block;
+    width: 33px;
+    height: 17px;
+    background: url(../images/close.png) no-repeat;
+    text-indent: -9999px;
+    outline: none;
+}
+
+.shadow {
+    -moz-box-shadow: 3px 3px 4px #000;
+    -webkit-box-shadow: 3px 3px 4px #000;
+    box-shadow: 3px 3px 4px #000;
+}

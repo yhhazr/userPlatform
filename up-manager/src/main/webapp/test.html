@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>测试</title>
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body onload="initQueryCondition()">
+<div id="hideorshow">
+    <a id="hidehref" href="#" onclick="showOrHide()">隐藏搜索条件</a>
+</div>
+<div id="queryHead">
+    <form action="order?action=queryOrderList" method="post" name="orderForm">
+        <table>
+            <tr>
+                <td>
+                    <select id="queryUserType" name="queryUserType" size="1" onchange="userInfoSelect()">
+                        <option value="empty" selected="true">------------------------</option>
+                        <option value="userId">用户ID</option>
+                        <option value="userName">用户名称</option>
+                    </select>
+
+                    <input id="userId" name="userId" type="text" size="15" disabled="true"/></td>
+
+                <td>
+                    <select id="queryPlayerType" name="queryPlayerType" size="1" onchange="playerInfoSelect()">
+                        <option value="empty" selected="true">------------------------</option>
+                        <option value="playerId">玩家ID</option>
+                        <option value="playerName">玩家名称</option>
+                    </select>
+                    <input id="playerId" name="playerId" type="text" size="15" disabled="true"/></td>
+
+                <td>游戏名称:
+                    <select id="gameName" name="gameName" size="1" onchange="">
+                        <option value="All" selected="true">------------------------</option>
+                    </select>
+                </td>
+                <td>服务器:
+                    <select id="serverName" name="serverName" size="1" onchange="">
+                        <option value="All" selected="true">------------------------</option>
+                    </select>
+                </td>
+                <td>充值金额下限:<input id="startMoney" name="startMoney" type="text" size="10"/></td>
+                <td>充值金额上限:<input id="endMoney" name="endMoney" type="text" size="10"/></td>
+            </tr>
+            <tr>
+                <td>支付网关:
+                    <select id="channelId" name="channelId" size="1" onchange="initSubType()">
+                        <option value="All" selected="true">------------------------</option>
+                    </select>
+                </td>
+                <td>支付方式:
+                    <select id="subType" name="subType" size="1" onchange="initPayBankOrSomething()">
+                        <option value="All" selected="true">------------------------</option>
+                    </select>
+                </td>
+                <td>支付渠道:
+                    <select id="bank" name="bank" size="1">
+                        <option value="All" selected="true">------------------------</option>
+                    </select>
+                </td>
+                <td>支付状态:
+                    <select id="status" name="status" size="1">
+                        <option value="All" selected="true">------------------------</option>
+                        <option value="success">成功</option>
+                        <option value="failed">失败</option>
+                    </select>
+                </td>
+                <td>提交开始时间:<input id="payStartTime" name="startTime" type="text" size="8"/>
+                    <img width="16" height="22" align="absmiddle" style="cursor:pointer"
+                         src="/images/datePicker.gif" onclick="WdatePicker({el:'startTime'})">
+                </td>
+                <td>提交结束时间:<input id="payEndTime" name="endTime" type="text" size="8"/>
+                    <img width="16" height="22" align="absmiddle" style="cursor:pointer"
+                         src="/images/datePicker.gif" onclick="WdatePicker({el:'endTime'})">
+                </td>
+            </tr>
+            <tr>
+                <td>确认开始时间:<input id="assertStartTime" name="startTime" type="text" size="8"/>
+                    <img width="16" height="22" align="absmiddle" style="cursor:pointer"
+                         src="/images/datePicker.gif" onclick="WdatePicker({el:'startTime'})">
+                </td>
+                <td>确认结束时间:<input id="assertEndTime" name="endTime" type="text" size="8"/>
+                    <img width="16" height="22" align="absmiddle" style="cursor:pointer"
+                         src="/images/datePicker.gif" onclick="WdatePicker({el:'endTime'})">
+                </td>
+
+                <td><input type="button" value="查询订单" onclick="query()"></td>
+                <td><input type="reset" value="重置"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

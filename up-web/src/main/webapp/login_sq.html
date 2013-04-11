@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Home</title>
+    <script type="text/javascript" src="/scripts/jquery.js"></script>
+</head>
+<body>
+<a href="/LoginAuth?u=jeremy&p=123123&ip=10.10.8.35">LoginAuth</a>
+<br/>
+
+<form action="/LoginAuth" method="post">
+    <label>用户名：</label>
+    <input type="text" name="user" value=""/>
+    <br/>
+    <label>密码：</label>
+    <input type="password" name="code" value=""/>
+    <br/>
+    <input type="hidden" name="ip" value="10.10.8.35"/>
+    <input type="submit" value="Auth"/>
+</form>
+</body>
+</html>

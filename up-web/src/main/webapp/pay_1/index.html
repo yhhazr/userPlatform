@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>充值页</title>
+    <script type="text/javascript" src="/scripts/jquery.js"></script>
+    <style type="text/css">
+        * {
+            margin: 0;
+            font-size: 13px;
+        }
+
+        table tr th {
+            text-align: left;
+        }
+    </style>
+    <script type="text/javascript">
+        function doSubmit() {
+            var ok = false;
+            $.ajax({
+                url:'/GetOrder',
+                data:{
+                    _c:$(":radio[name=_c][checked]").val(),
+                    _s:$(":text[name=_s]").val()
+                },
+                cache:false,
+                async:false,
+                success:function (res) {
+                    if (res) {
+                        ok = true;
+                        $(":hidden[name=_n]").val(res);
+                    } else {
+                        alert("Invalid order.");
+                    }
+                }
+            });
+            return ok;
+        }
+    </script>
+</head>
+<body>
+<form id="f1" action="/Purchase" method="POST" target="_blank" onsubmit="return doSubmit();">
+    <input type="hidden" name="_n" value=""/>
+    <!-- 游戏 -->
+    <input type="hidden" name="_g" value="1"/>
+    <!-- 所在大区 -->
+    <input type="hidden" name="_z" value="1"/>
+    <table>
+        <tr>
+            <th>充值渠道：</th>
+            <td>
+                <p>
+                    <input type="radio" name="_c" value="D"/>快钱
+                </p>
+
+                <p>
+                    <input type="radio" name="_c" value="C"/>易宝
+                </p>
+
+                <p>
+                    <input type="radio" name="_c" value="A"/>支付宝
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <th>充值类型：</th>
+            <td>
+                <input type="text" name="_s" value="1"/>
+            </td>
+        </tr>
+        <tr>
+            <th>BANK_ID：</th>
+            <td>
+                <input type="text" name="_f" value=""/>
+            </td>
+        </tr>
+        <tr>
+            <th>游戏：</th>
+            <td><b>神曲</b></td>
+        </tr>
+        <tr>
+            <th>大区：</th>
+            <td>1区（开天辟地）</td>
+        </tr>
+        <tr>
+            <th>用户：</th>
+            <td>
+                <input type="text" name="user" value="jeremy"/>
+            </td>
+        </tr>
+        <tr>
+            <th>角色：</th>
+            <td>
+                <select name="p">
+                    <option>-- 请选择 --</option>
+                    <option value="10086" selected>马德法克</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>金额（不少于10元）：</th>
+            <td>
+                <input type="text" name="amount" value="1"/>
+            </td>
+        </tr>
+        <tr>
+            <th>金币：</th>
+            <td>
+                10
+            </td>
+        </tr>
+        <tr>
+            <th>兑换比例：</th>
+            <td>
+                1:10
+            </td>
+        </tr>
+        <tr>
+            <th>&nbsp;</th>
+            <td>
+                <input type="submit" value="充值"/>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

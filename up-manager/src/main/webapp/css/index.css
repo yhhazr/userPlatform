@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+
+}
+
+body {
+    overflow: hidden;
+
+}
+
+.mainDiv {
+    width: 1400px;
+}
+
+.headDiv {
+    height: 40px;
+    line-height: 20px;
+    background-color: #7b7c80;
+}
+
+#logo {
+    height: 40px;
+    width: 15%;
+    clear: both;
+    float: left;
+    text-align: center;
+    vertical-align: middle;;
+
+}
+
+.contentDiv {
+    width: 99.9%;
+    margin-top: 38px;
+    position: absolute;
+    overflow: auto;
+}
+
+.footDiv {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    position: absolute;
+    bottom: 0;
+    background-color: #BBB;
+}
+
+.clearDiv {
+    clear: both;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    color: #2f332a;
+    font: 15px/21px Arial, Helvetica, simsun, sans-serif;
+    background: #f0f6e4 /9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #2f332a;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    padding-bottom: 5px;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 5px;
+}
+
+h6 {
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-align: center;
+}
+
+a {
+    color: #3C6E31;
+    text-decoration: underline;
+}
+
+a:hover {
+    background-color: #3C6E31;
+    color: white;
+}
+
+input.radio {
+    margin: 0 2px 0 8px;
+}
+
+input.radio.first {
+    margin-left: 0;
+}
+
+input.empty {
+    color: lightgray;
+}
+
+code {
+    color: #2f332a;
+}
+
+.highlight_red {
+    color: #A60000;
+}
+
+.highlight_green {
+    color: #A7F43D;
+}
+
+li {
+    list-style: circle;
+    font-size: 12px;
+}
+
+li.title {
+    list-style: none;
+}
+
+ul.list {
+    margin-left: 17px;
+}
+
+div.content_wrap {
+    width: 600px;
+    height: 380px;
+}
+
+div.content_wrap div.left {
+    float: left;
+    width: 250px;
+}
+
+div.content_wrap div.right {
+    float: right;
+    width: 340px;
+}
+
+div.zTreeDemoBackground {
+    width: 250px;
+    height: 362px;
+    text-align: left;
+}
+
+ul.ztree {
+    margin-top: 10px;
+    border: 1px solid #617775;
+    background: #f0f6e4;
+    width: 220px;
+    height: 360px;
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+
+ul.log {
+    border: 1px solid #617775;
+    background: #f0f6e4;
+    width: 300px;
+    height: 170px;
+    overflow: hidden;
+}
+
+ul.log.small {
+    height: 45px;
+}
+
+ul.log li {
+    color: #666666;
+    list-style: none;
+    padding-left: 10px;
+}
+
+ul.log li.dark {
+    background-color: #E3E3E3;
+}
+
+/* ruler */
+div.ruler {
+    height: 20px;
+    width: 220px;
+    background-color: #f0f6e4;
+    border: 1px solid #333;
+    margin-bottom: 5px;
+    cursor: pointer
+}
+
+div.ruler div.cursor {
+    height: 20px;
+    width: 30px;
+    background-color: #3C6E31;
+    color: white;
+    text-align: right;
+    padding-right: 5px;
+    cursor: pointer
+}
+
+/* CSS Document */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, pre, a, code, em, img, small, strong, sub, sup, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent
+}
+
+a {
+    color: #007bc4 /*#424242*/;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+ol, ul {
+    list-style: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+body {
+    height: 100%;
+    font: 12px/18px Tahoma, Helvetica, Arial, Verdana, "\5b8b\4f53", sans-serif;
+    color: #51555C;
+}
+
+img {
+    border: none
+}
+
+#header {
+    width: 910px;
+    height: 92px;
+    margin: 0 auto;
+}
+
+#logo h1 {
+}
+
+#logo h1 a {
+    display: block;
+    width: 240px;
+    height: 90px
+}
+
+#main {
+    width: 910px;
+    min-height: 600px;
+    margin: 30px auto 0 auto;
+    background: #fff;
+    -moz-border-radius: 12px;
+    -khtml-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+}
+
+#footer {
+    height: 60px;
+}
+
+#footer p {
+    padding: 10px 2px;
+    line-height: 24px;
+    text-align: center
+}
+
+#footer p a:hover {
+    color: #51555C
+}
+
+.google_ad {
+    width: 728px;
+    height: 90px;
+    margin: 50px auto
+}
+
+.grid_table {
+    width: 780px;
+    margin: 20px auto
+}
+
+td a {
+    color: #369
+}
+
+#opt {
+    height: 32px;
+}
+
+#query {
+    float: right;
+    width: 450px;
+    text-align: right
+}
+
+.input {
+    width: 120px;
+    height: 19px;
+    line-height: 19px;
+    padding: 1px;
+    border: 1px solid #ccc
+}
+
+.nodata {
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 35%;
+    padding: 6px 20px;
+    border: 1px solid #fc9;
+    background: #ffc
+}
+
+.fanbox {
+    width: 540px;
+    padding: 0
+}
+
+.fanbox h3 {
+    height: 32px;
+    line-height: 32px;
+    padding-left: 12px;
+    background: #369;
+    color: #fff
+}
+
+.post_table {
+    width: 98%;
+    margin: 10px auto
+}
+
+.post_table td {
+    height: 24px;
+    line-height: 24px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-collapse: collapse
+}
+
+.input2 {
+    width: 220px;
+    height: 20px;
+    line-height: 20px;
+    padding: 1px;
+    border: 1px solid #999
+}
+
+.jquery-message {
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    background: #217eb9;
+    border: 1px solid #ff9;
+    padding: 3px 12px 3px 12px;
+    z-index: 9001;
+    color: #fff;
+}
+
+.btn1 {
+
+    background-color: #f9f9f9;
+}
+
+.btn2 {
+    background: url("/images/delete.gif") no-repeat 8px center;
+    background-color: #f9f9f9;
+}
+
+.btn3 {
+    background: url("/images/reset.gif") no-repeat 8px center;
+    background-color: #f9f9f9;
+}
+
+.pbtn1 {
+    border: solid 2px #dcdcdc;
+    padding: 4px 14px 4px 34px;
+    color: #959595;
+}
+
+.pbtn2 {
+    border: solid 1px #dcdcdc;
+    padding: 4px 14px 4px 34px;
+    color: #959595;
+}
+
+.xs3 {
+    background: rgba(99, 55, 11, 0.0);
+    position: absolute;
+    /*border:1px solid #CC66CC;*/
+    display: none;
+}
+
+

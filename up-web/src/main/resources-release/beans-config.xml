@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2012. SZ7thRoad.TechSupport All Right Reserved.
+  -->
+
+<beans>
+    <description>通行证平台接口服务配置文件。</description>
+    <!--默认连接池，用于主数据库-->
+    <bean id="default" class="com.sz7road.persist.DataSourceBean">
+        <property name="dataSourceProperties">
+            <props>
+                <!--<prop key="jdbcUrl">SPmS+WcH7TnY/yzWFSXxqXMEIHMCqevg9zrVEmj26ZPezT/kDLxKjSd2WX8aVbeUsh2Oh9ThbSweH01s9M6oUJoR+ub4FHJU</prop>-->
+                <prop key="jdbcUrl">
+                    SPmS+WcH7TnWVhkdstPdSGdSVI6Wm9LLXW+8pMt8qhzDivbpcoiiGND0D9bpXFFL
+                </prop>
+                <prop key="username">EFn3m/PtYwkZa+wLrswTig==</prop>
+                <prop key="password">7t0acRAu5T1L9ln7EyHzXA==</prop>
+                <prop key="lazyInit">false</prop>
+                <prop key="partitionCount">4</prop>
+                <prop key="maxConnectionsPerPartition">20</prop>
+                <prop key="minConnectionsPerPartition">4</prop>
+                <prop key="acquireIncrement">4</prop>
+                <prop key="connectionTimeoutInMs">10000</prop>
+                <prop key="poolName">pool-db_userplatform</prop>
+                <prop key="disableJMX">false</prop>
+                <prop key="defaultAutoCommit">false</prop>
+            </props>
+        </property>
+    </bean>
+    <!--日志连接池，用于日志数据库-->
+    <bean id="log" class="com.sz7road.persist.DataSourceBean">
+        <property name="dataSourceProperties">
+            <props>
+                <!--<prop key="jdbcUrl">SPmS+WcH7TnY/yzWFSXxqXMEIHMCqevgknQG+EU+7C9Y5XN67IaTwGknlfkZyDLUeJXOPJGtvX+Mi1DEyrruvm2AOZP60JTR</prop>-->
+                <prop key="jdbcUrl">
+                    SPmS+WcH7TnWVhkdstPdSGdSVI6Wm9LLh7ylmotp6HbEXBFpEk01NXB37OpR5huGjGFFFJLQwhREeVSapW6QLKgB+XAj/DNX
+                </prop>
+                <prop key="username">MMOJvr3dbME=</prop>
+                <prop key="password">noIRYhaBxFAsALXZ9CEaDQ==</prop>
+                <prop key="lazyInit">false</prop>
+                <prop key="partitionCount">3</prop>
+                <prop key="maxConnectionsPerPartition">10</prop>
+                <prop key="minConnectionsPerPartition">2</prop>
+                <prop key="acquireIncrement">2</prop>
+                <prop key="connectionTimeoutInMs">10000</prop>
+                <prop key="poolName">pool-log_userplatform</prop>
+                <prop key="disableJMX">false</prop>
+                <prop key="defaultAutoCommit">false</prop>
+            </props>
+        </property>
+    </bean>
+</beans>
